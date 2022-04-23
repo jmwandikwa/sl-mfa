@@ -66,7 +66,7 @@
 								<div class="d-flex align-items-center justify-content-between">
 									<img src="../../../images/avatar/avatar-15.png" class="me-10 avatar avatar-lg bg-primary-light" alt="" />
 									<div>
-										<h4 class="fw-500 mb-0">Nil Yeager</h4>
+										<h4 class="fw-500 mb-0"><?= session()->get('user_name'); ?></h4>
 										<a href="extra_profile.html">View Profile</a>
 									</div>
 								</div>

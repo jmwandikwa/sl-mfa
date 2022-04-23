@@ -640,10 +640,10 @@
                 <div class="d-flex flex-row">
                     <div class=""><img src="../../../images/avatar/avatar-13.png" alt="user" class="rounded bg-danger-light w-150" width="100"></div>
                     <div class="ps-20">
-                        <h5 class="mb-0">Nil Yeager</h5>
+                        <h5 class="mb-0"><?= session()->get('user_name'); ?></h5>
                         <p class="my-5 text-fade">Manager</p>
                         <a href="mailto:dummy@gmail.com"><span class="icon-Mail-notification me-5 text-success"><span class="path1"></span><span class="path2"></span></span> dummy@gmail.com</a>
-                        <button class="btn btn-success-light btn-sm mt-5"><i class="ti-plus"></i> Follow</button>
+                        <a href="/logout"><button class="btn btn-success-light btn-sm mt-5"><i class="fa-lock"></i>Logout</button></a>
                     </div>
                 </div>
 			</div>
