@@ -10,32 +10,38 @@
 						<div class="bg-gray-800 rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<h2 class="text-primary fw-600">Get started with Us</h2>
-								<p class="mb-0 text-fade">Register a new membership</p>							
+								<?php if(isset($validation)):?>
+								<div class="alert alert-danger">
+									<?= $validation->listErrors() ?>
+								</div>
+								<?php endif;?>
+								<p class="mb-0 text-fade">Register a new membership</p>	
+                                
 							</div>
 							<div class="p-40">
-								<form action="index.html" method="post">
+								<form action="/register/save" method="post">
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-user"></i></span>
-											<input type="text" class="form-control ps-15" placeholder="Full Name">
+											<input type="text" name="name" class="form-control ps-15" placeholder="Full Name">
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-email"></i></span>
-											<input type="email" class="form-control ps-15" placeholder="Email">
+											<input type="email" name="email" class="form-control ps-15" placeholder="Email">
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-lock"></i></span>
-											<input type="password" class="form-control ps-15" placeholder="Password">
+											<input type="password" name="password" class="form-control ps-15" placeholder="Password">
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-lock"></i></span>
-											<input type="password" class="form-control ps-15" placeholder="Retype Password">
+											<input type="password" name="confpassword" class="form-control ps-15" placeholder="Retype Password">
 										</div>
 									</div>
 									  <div class="row">

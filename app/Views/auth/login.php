@@ -10,20 +10,25 @@
 						<div class="bg-gray-800 rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<h2 class="text-primary fw-600">Let's Get Started</h2>
+								<?php if(session()->getFlashdata('msg')): ?>
+								<div class="alert alert-danger">
+									<?= session()->getFlashdata('msg'); ?>
+								</div>
+								<?php endif; ?>
 								<p class="mb-0 text-fade">Sign in to continue to EmployX.</p>							
 							</div>
 							<div class="p-40">
-								<form action="index.html" method="post">
+								<form action="/login/auth" method="post">
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-user"></i></span>
-											<input type="text" class="form-control ps-15 " placeholder="Username">
+											<input type="email" name="email" class="form-control ps-15 " placeholder="Username">
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-lock"></i></span>
-											<input type="password" class="form-control ps-15" placeholder="Password">
+											<input type="password" name="password" class="form-control ps-15" placeholder="Password">
 										</div>
 									</div>
 									  <div class="row">
