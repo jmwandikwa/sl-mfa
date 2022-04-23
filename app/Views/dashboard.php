@@ -263,62 +263,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-6 col-12">
-					<div class="row">
-						<div class="col-xl-6 col-12">
-							<div class="box overflow-hidden">
-								<div class="box-header no-border">
-									<h4 class="box-title text-overflow">
-										Total Followers <small class="subtitle">Last  5 days</small>
-									</h4>
-								</div>
-								<div class="box-body p-0">
-									<h1 class="mt-0 ps-20 pt-0 fw-500 text-success">215,5K</h1>
-									<div id="followers-spark" class="apex-charts-spark"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-12">
-							<div class="box overflow-hidden">
-								<div class="box-header no-border">
-									<h4 class="box-title text-overflow">
-										Growth of total folower <small class="subtitle">Last  5 days</small>
-									</h4>
-								</div>
-								<div class="box-body p-0">
-									<h1 class="mt-0 ps-20 pt-0 fw-500 text-primary">815</h1>
-									<div id="growth-spark" class="apex-charts-spark"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-12">
-							<div class="box overflow-hidden">
-								<div class="box-header no-border">
-									<h4 class="box-title text-overflow">
-										Number of posts <small class="subtitle">Last  5 days</small>
-									</h4>
-								</div>
-								<div class="box-body p-0">
-									<h1 class="mt-0 ps-20 pt-0 fw-500 text-info">153</h1>
-									<div id="post-spark" class="apex-charts-spark"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-12">
-							<div class="box overflow-hidden">
-								<div class="box-header no-border">
-									<h4 class="box-title text-overflow">
-										Interactions <small class="subtitle">Last  5 days</small>
-									</h4>
-								</div>
-								<div class="box-body p-0">
-									<h1 class="mt-0 ps-20 pt-0 fw-500 text-warning">2154</h1>
-									<div id="interactions-spark" class="apex-charts-spark"></div>
-								</div>
-							</div>
-						</div>						
-					</div>
-				</div>
+				
 				<div class="col-xl-3 col-12">
 					<div class="box" style="height: 37.2rem;">		
 						<div class="box-body px-0" style="min-height: 268px;">	
