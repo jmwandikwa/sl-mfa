@@ -1,0 +1,13 @@
+CRITICAL - 2022-04-23 03:16:09 --> Undefined variable $title
+#0 /workspace/sl-mfa/app/Views/components/portal-frame.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/sl-mfa/system/View/View.php(210): include('...')
+#2 /workspace/sl-mfa/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /workspace/sl-mfa/system/View/View.php(226): CodeIgniter\View\View->render()
+#4 /workspace/sl-mfa/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /workspace/sl-mfa/app/Controllers/Home.php(37): view()
+#6 /workspace/sl-mfa/system/CodeIgniter.php(832): App\Controllers\Home->faq()
+#7 /workspace/sl-mfa/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /workspace/sl-mfa/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /workspace/sl-mfa/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /workspace/sl-mfa/system/Commands/Server/rewrite.php(43): require_once('...')
+#11 {main}
