@@ -37,6 +37,7 @@ $routes->get('/dashboard', 'Home::Dashboard');
 $routes->get('/login', 'Home::login');
 $routes->get('/register', 'Home::register');
 $routes->get('/screen', 'Home::lockScreen');
+$routes->get('/faq', 'Home::faq');
 
 
 /*
