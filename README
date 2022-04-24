@@ -1,1 +1,9 @@
-ill update you later
+have added two pages for forgot password and users profile
+
+view for user password forgot : "/auth/password"
+
+NB : create the function for reset password in forgot password controller
+
+view for user password forgot : "/pages/user-profile"
+
+NB : create function for user profile in Dashboard controller _> !important we will use this controller for all dashboard pages

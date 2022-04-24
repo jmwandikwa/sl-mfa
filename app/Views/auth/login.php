@@ -52,17 +52,10 @@
 									  </div>
 								</form>	
 								<div class="text-center">
-									<p class="mt-15 mb-0 text-fade">Don't have an account? <a href="auth_register.html" class="text-primary ms-5">Sign Up</a></p>
+									<p class="mt-15 mb-0 text-fade">Don't have an account? <a href="/register" class="text-primary ms-5">Sign Up</a></p>
 								</div>
 								
-								<div class="text-center">
-								  <p class="mt-20 text-fade">- Sign With -</p>
-								  <p class="gap-items-2 mb-0">
-									  <a class="waves-effect waves-circle btn btn-social-icon btn-circle btn-facebook-light" href="auth_login_dark.html#"><i class="fa fa-facebook"></i></a>
-									  <a class="waves-effect waves-circle btn btn-social-icon btn-circle btn-twitter-light" href="auth_login_dark.html#"><i class="fa fa-twitter"></i></a>
-									  <a class="waves-effect waves-circle btn btn-social-icon btn-circle btn-instagram-light" href="auth_login_dark.html#"><i class="fa fa-instagram"></i></a>
-									</p>	
-								</div>
+								
 							</div>						
 						</div>
 					</div>

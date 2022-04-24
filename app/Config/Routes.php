@@ -31,11 +31,12 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/users', 'Home::users');
+$routes->get('/', 'Home::index', ['filter' => 'auth']);
+$routes->get('/users', 'Home::users',['filter' => 'auth']);
+$routes->get('/login', 'Home::login',['filter' => 'Login']);
 $routes->get('/dashboard', 'Home::Dashboard',['filter' => 'auth']);
 $routes->get('/screen', 'Home::lockScreen');
-$routes->get('/faq', 'Home::faq');
+$routes->get('/faq', 'Home::faq',['filter' => 'auth']);
 $routes->get('/logout', 'Login::logout');
 
 

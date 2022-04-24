@@ -16,6 +16,7 @@ class Login extends BaseController
 
     public function auth()
     {
+        
         $session = session();
         $model = new UserModel();
         $email = $this->request->getVar('email');
@@ -48,6 +49,32 @@ class Login extends BaseController
         $session = session();
         $session->destroy();
         return redirect()->to('/');
+    }
+    public function screen()
+    {
+     $session = session();
+     $model = new UserModel();
+     $name = $session->get('user_name');
+     $password = $this->request->getVar('password');
+        $data = $model->where('user_name', $name)->first();
+        if($data){
+            $pass = $data['user_password'];
+            $verify_pass = password_verify($password, $pass);
+            if($verify_pass){
+                $ses_data = [
+                    'user_id'       => $data['user_id'],
+                    'user_name'     => $data['user_name'],
+                    'user_email'    => $data['user_email'],
+                    'logged_in'     => TRUE
+                ];
+                $session->set($ses_data);
+                return redirect()->to('/dashboard');
+            }else{
+                $session->setFlashdata('msg', 'Wrong Password');
+                return redirect()->to('/login');
+            }
+        }
+        
     }
 }
 

@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Auth implements FilterInterface
+class Login implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -24,21 +24,16 @@ class Auth implements FilterInterface
      * @return mixed
      */
     public function before(RequestInterface $request, $arguments = null)
-  {
-    $session = session();
-    if(!$session->get('logged_in'))
     {
-        if($session->get('user_name')== '')
-        {
-            return redirect()->to('/login');
-        }
-        if($session->get('user_name')!= '')
-        {
-            return redirect()->to('/screen');
-        }
-        
+       $session = session();
+       if($session->get('logged_in'))
+       {
+           return redirect()->to('/dashboard');
+       }elseif(!$session->get('logged_in') && $session->get('user_name')!= '')
+       {
+           return redirect()->to('/screen');
+       }
     }
-}
 
     /**
      * Allows After filters to inspect and modify the response
