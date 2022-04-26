@@ -205,7 +205,7 @@
 					</span>
 				  </a>					
 				  <ul class="treeview-menu">					
-					<li><a href="/dashboard/blogs"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard</a></li>
+					<li><a href="/dashboard/blog-dash"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard</a></li>
 					<li><a href="/dashboard/discover"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Discover</a></li>	
 					<li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Publications</a></li>	
 				  </ul>
