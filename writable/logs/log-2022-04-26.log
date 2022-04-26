@@ -71,3 +71,17 @@ CRITICAL - 2022-04-26 13:51:56 --> The original file is not a valid file.
 #5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
 #7 {main}
+CRITICAL - 2022-04-26 14:48:03 --> Call to a member function getName() on null
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-26 14:48:08 --> Call to a member function getName() on null
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}

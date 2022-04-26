@@ -367,7 +367,7 @@
         formData.append('cartegory', cartegory);
         formData.append('description', description);
         formData.append('cover', $("input[name='cover']")[0].files[0]);
-        if(content!='' && title !='' && description !=''){
+        if(content!='' && title !='' && description !='' && $("input[name='cover']")[0].files[0] !=''){
         $.ajax({
             url: '<?=base_url()?>/dashboard/blogCreate',
             type: 'POST',
