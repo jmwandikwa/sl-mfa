@@ -25,19 +25,18 @@ class Auth implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
   {
+       
     $session = session();
-    if(!$session->get('logged_in'))
+     if(!$session->get('logged_in') && $session->get('user_name')== '')
     {
-        if($session->get('user_name')== '')
-        {
-            return redirect()->to('/login');
-        }
-        if($session->get('user_name')!= '')
-        {
-            return redirect()->to('/screen');
-        }
-        
+        return redirect()->to(base_url('/login'));
+    }elseif(!$session->get('logged_in') && $session->get('user_name')!= '')
+    {
+        return redirect()->to(base_url('/screen'));
     }
+        
+        
+    
 }
 
     /**
@@ -54,6 +53,7 @@ class Auth implements FilterInterface
      */
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        //
+        
+        
     }
 }

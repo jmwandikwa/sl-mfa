@@ -28,7 +28,7 @@ class Login implements FilterInterface
        $session = session();
        if($session->get('logged_in'))
        {
-           return redirect()->to('/dashboard');
+         return redirect()->to('/dashboard');
        }elseif(!$session->get('logged_in') && $session->get('user_name')!= '')
        {
            return redirect()->to('/screen');

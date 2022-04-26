@@ -1,0 +1,429 @@
+CRITICAL - 2022-04-25 13:07:15 --> foreach() argument must be of type array|object, string given
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(167): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-25 13:08:15 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-25 13:08:33 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-25 14:00:55 --> Undefined variable $user_image
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/user-profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(17): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->userProfile()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-25 14:02:26 --> Undefined variable $user_image
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/user-profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(17): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->userProfile()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-25 14:05:57 --> Class "App\Controllers\UserModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->userProfile()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:11:02 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:11:39 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:11:44 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:11:58 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:19:52 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:20:00 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:20:09 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:20:15 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:20:49 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:21:42 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:22:18 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:23:26 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:23:30 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:23:42 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:35:47 --> Undefined variable $user_image
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/user-profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(58): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->userProfile()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-25 14:37:29 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:45:00 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:45:13 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:46:33 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:47:33 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:52:32 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:52:39 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 14:52:45 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:00:15 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:01:16 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:01:19 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:04:33 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:09:14 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:11:00 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:12:15 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:12:23 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:12:41 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:13:42 --> syntax error, unexpected token "}"
+#0 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(797): class_exists()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-25 15:15:52 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:16:20 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:16:44 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:17:26 --> syntax error, unexpected token "echo"
+#0 /home/maxi/Documents/github/sl-updated/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-25 15:17:28 --> syntax error, unexpected token "echo"
+#0 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(797): class_exists()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-25 15:17:43 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:20:40 --> Undefined variable $vdata
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Forgot.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-25 15:21:08 --> Undefined variable $vdata
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Forgot.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-25 15:21:11 --> Undefined variable $vdata
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Forgot.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-25 15:21:12 --> Undefined variable $vdata
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Forgot.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-25 15:28:58 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:29:25 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:30:16 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:31:18 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:32:53 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:34:04 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Forgot->getKey()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-25 15:34:56 --> Class "App\Models\userModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Settings->save()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}

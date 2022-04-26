@@ -35,10 +35,13 @@ $routes->get('/', 'Home::index', ['filter' => 'auth']);
 $routes->get('/users', 'Home::users',['filter' => 'auth']);
 $routes->get('/login', 'Home::login',['filter' => 'Login']);
 $routes->get('/dashboard', 'Home::Dashboard',['filter' => 'auth']);
-$routes->get('/screen', 'Home::lockScreen');
+$routes->get('/screen', 'Home::lockScreen',['filter' => 'auth']);
 $routes->get('/faq', 'Home::faq',['filter' => 'auth']);
 $routes->get('/logout', 'Login::logout');
-
+$routes->get('/forgot', 'Forgot::index');
+$routes->get('/dashboard/profile', 'Dashboard::userProfile',['filter' => 'auth']);
+$routes->get('/dashboard/blog-dash', 'Dashboard::blogDashboard',['filter' => 'auth']);
+$routes->get('/dashboard/discover', 'Dashboard::blogDiscover',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

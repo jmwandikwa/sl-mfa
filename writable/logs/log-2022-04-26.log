@@ -1,0 +1,20 @@
+CRITICAL - 2022-04-26 07:19:01 --> Undefined variable $data
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogDiscover()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-26 08:07:31 --> Undefined variable $blog
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blog-discover.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(35): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogDiscover()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}

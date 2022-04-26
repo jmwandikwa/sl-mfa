@@ -27,15 +27,15 @@
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
 		<!-- Logo -->
-		<a href="index.html" class="logo">
+		<a href="" class="logo">
 		  <!-- logo-->
-		  <div class="logo-mini w-40">
-			  <span class="light-logo"><img src="/images/logo-letter.png" alt="logo"></span>
-			  <span class="dark-logo"><img src="/images/logo-letter-white.png" alt="logo"></span>
+		  <div class="logo-mini w-100">
+			  <span class="light-logo"><img src="/images/logo.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="/images/logo.png" alt="logo"></span>
 		  </div>
 		  <div class="logo-lg">
-			  <span class="light-logo"><img src="/images/logo-light-text.png" alt="logo"></span>
-			  <span class="dark-logo"><img src="/images/logo-light-text.png" alt="logo"></span>
+			  <span class="light-logo">Sl</span>
+			  <span class="dark-logo">SL</span>
 		  </div>
 		</a>	
 	</div>   
@@ -191,11 +191,25 @@
 			  <!-- sidebar menu-->
 			  <ul class="sidebar-menu" data-widget="tree">				
 				<li>
-				  <a href="index.html">
+				  <a href="/dashboard">
 					<i data-feather="home"></i>
 					<span>Dashboard</span>
 				  </a>
 				</li>									
+				<li class="treeview">
+				  <a href="index.html#">
+					<i data-feather="file-plus"></i>
+					<span>Blog</span>
+					<span class="pull-right-container">
+					  <i class="fa fa-angle-right pull-right"></i>
+					</span>
+				  </a>					
+				  <ul class="treeview-menu">					
+					<li><a href="/dashboard/blogs"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard</a></li>
+					<li><a href="/dashboard/discover"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Discover</a></li>	
+					<li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Publications</a></li>	
+				  </ul>
+				</li> 
 				<li class="treeview">
 				  <a href="index.html#">
 					<i data-feather="file-plus"></i>
@@ -213,8 +227,14 @@
 				</li> 
 				<li>
 				  <a href="candidates.html">
-					<i data-feather="briefcase"></i>
+					<i data-feather="users"></i>
 					<span>Candidates</span>
+				  </a>
+				</li>   					
+				<li>
+				  <a href="/dashboard/profile">
+					<i data-feather="user"></i>
+					<span>Profile</span>
 				  </a>
 				</li>   					
 				<li class="treeview">
@@ -754,7 +774,10 @@
 	
 	
 	<!-- Vendor JS -->
+
 	<script src="/src/js/vendors.min.js"></script>
+	<?php $this->renderSection('scripts'); ?>
+
 	<script>
 		window.onload = function() {
   inactivityTime();
@@ -771,8 +794,8 @@
 	document.addEventListener('scroll', resetTimer, true); // improved; see comments
 
     function logout() {
-		<?php session()->remove("logged_in"); ?>
-		location.reload();
+		//
+		// location.reload();
         //location.href = 'logout.html'
     }
 
@@ -791,7 +814,7 @@
 				var msg = $('#chat-input').val();
 				// $("chat-logs").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a><p class='text-muted fs-12 mb-0'>3 minutes</p></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+m+"</div></div>");
 				$('#chat-input').val('');
-				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a><p class='text-muted fs-12 mb-0'>3 minutes</p></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
+				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
                 formData = {
 				question: msg,
 				query: msg,
@@ -801,9 +824,11 @@
 					url: "/bot/message",
 					data: formData,
 					success: function (response) {
-						$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>Mayra Sibley</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
+						setTimeout(function() {				
+			$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>Mayra Sibley</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
+			$('#log').scrollTop($('#log')[0].scrollHeight);
+			}, 1000);
 						
-						$('#log').scrollTop($('#log')[0].scrollHeight);
 					}
 				});
 			});
@@ -813,7 +838,6 @@
 
 	<script src="/src/js/pages/chat-popup.js"></script>
     <script src="/assets/icons/feather-icons/feather.min.js"></script>
-	<?php $this->renderSection('scripts'); ?>
 	<script src="/assets/vendor_components/raphael/raphael.min.js"></script>
 	<script src="/assets/vendor_components/morris.js/morris.min.js"></script>
 	<script src="/assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>	

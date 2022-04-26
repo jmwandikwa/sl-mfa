@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/images/favicon.ico">
 
-    <title>EmployX - Log in </title>
+    <title>SL Auth Page</title>
   
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="/src/css/vendors_css.css">
@@ -25,6 +25,7 @@
 
 	<!-- Vendor JS -->
 	<script src="/src/js/vendors.min.js"></script>
+	<?php $this->renderSection('script'); ?>
 	<script src="/src/js/pages/chat-popup.js"></script>
     <script src="/assets/icons/feather-icons/feather.min.js"></script>	
 

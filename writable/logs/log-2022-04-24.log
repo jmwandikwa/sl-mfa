@@ -1,0 +1,415 @@
+CRITICAL - 2022-04-24 01:52:02 --> syntax error, unexpected token "{", expecting "("
+#0 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /home/maxi/Documents/github/sl-updated/system/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-04-24 01:57:43 --> Call to undefined method CodeIgniter\Session\Session::ses_data()
+#0 /home/maxi/Documents/github/sl-updated/system/Filters/Filters.php(173): App\Filters\Auth->before()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 02:09:39 --> syntax error, unexpected token "}"
+#0 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/maxi/Documents/github/sl-updated/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /home/maxi/Documents/github/sl-updated/system/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-04-24 02:22:38 --> Undefined variable $session
+#0 /home/maxi/Documents/github/sl-updated/app/Filters/Auth.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/Filters/Filters.php(173): App\Filters\Auth->before()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-24 02:23:18 --> Undefined variable $session
+#0 /home/maxi/Documents/github/sl-updated/app/Filters/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/Filters/Filters.php(173): App\Filters\Auth->before()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-24 12:01:00 --> Class "App\Controllers\BlogModel" not found
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 13:42:29 --> Undefined constant "session"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(23): view()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blog()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}
+CRITICAL - 2022-04-24 13:42:44 --> Undefined constant "session"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(23): view()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blog()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}
+CRITICAL - 2022-04-24 13:46:56 --> Undefined variable $data
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:47:17 --> Undefined variable $data
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:47:19 --> Undefined variable $data
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:48:13 --> Array to string conversion
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:48:15 --> Array to string conversion
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:50:28 --> syntax error, unexpected token "/"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-24 13:50:50 --> syntax error, unexpected token "/"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-24 13:55:40 --> Attempt to read property "blog_title" on array
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:55:46 --> Attempt to read property "blog_title" on array
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 13:57:42 --> syntax error, unexpected token "<"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-24 13:58:12 --> Undefined variable $blogs
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(23): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blog()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 14:00:08 --> Undefined array key "blog_satus"
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 14:06:25 --> Call to a member function where() on array
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:09:41 --> Call to a member function findAll() on string
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:09:43 --> Call to a member function findAll() on string
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:10:28 --> Trying to access array offset on value of type null
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 14:12:22 --> Call to a member function get() on string
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:12:35 --> Call to a member function get() on string
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:14:28 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(318): strtr()
+#1 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(293): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#3 /home/maxi/Documents/github/sl-updated/system/Database/BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#4 /home/maxi/Documents/github/sl-updated/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 /home/maxi/Documents/github/sl-updated/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/maxi/Documents/github/sl-updated/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(29): CodeIgniter\BaseModel->findAll()
+#8 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#9 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#13 {main}
+CRITICAL - 2022-04-24 14:14:31 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(318): strtr()
+#1 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(293): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /home/maxi/Documents/github/sl-updated/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#3 /home/maxi/Documents/github/sl-updated/system/Database/BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#4 /home/maxi/Documents/github/sl-updated/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 /home/maxi/Documents/github/sl-updated/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/maxi/Documents/github/sl-updated/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(29): CodeIgniter\BaseModel->findAll()
+#8 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#9 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#13 {main}
+ERROR - 2022-04-24 14:15:41 --> Unknown column 'user_email' in 'where clause'
+CRITICAL - 2022-04-24 14:15:41 --> foreach() argument must be of type array|object, bool given
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+ERROR - 2022-04-24 14:17:11 --> Unknown column 'user_email' in 'where clause'
+CRITICAL - 2022-04-24 14:17:11 --> Call to a member function getArray() on bool
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+ERROR - 2022-04-24 14:17:29 --> Unknown column 'user_email' in 'where clause'
+CRITICAL - 2022-04-24 14:17:29 --> Call to a member function getArray() on bool
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+ERROR - 2022-04-24 14:18:34 --> Unknown column 'user_email' in 'where clause'
+CRITICAL - 2022-04-24 14:18:34 --> foreach() argument must be of type array|object, bool given
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+ERROR - 2022-04-24 14:18:35 --> Unknown column 'user_email' in 'where clause'
+CRITICAL - 2022-04-24 14:18:35 --> foreach() argument must be of type array|object, bool given
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blogs.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-24 14:19:16 --> Cannot use object of type mysqli as array
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}
+CRITICAL - 2022-04-24 14:19:19 --> Cannot use object of type mysqli as array
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}
+CRITICAL - 2022-04-24 14:20:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArray()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-24 14:20:50 --> Cannot access offset of type string on string
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(31): view()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->Blogs()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}
