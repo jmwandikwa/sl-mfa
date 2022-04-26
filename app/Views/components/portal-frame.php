@@ -19,7 +19,7 @@
      
   </head>
 
-<body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
@@ -741,7 +741,7 @@
                   </div>
                 </div>
                 <div class="text-center flex-grow-1">
-                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div class="text-dark fs-18">Bot Ignite</div>
                     <div>
                         <span class="badge badge-sm badge-dot badge-primary"></span>
                         <span class="text-muted fs-12">Active</span>
@@ -814,7 +814,9 @@
 				var msg = $('#chat-input').val();
 				// $("chat-logs").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a><p class='text-muted fs-12 mb-0'>3 minutes</p></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+m+"</div></div>");
 				$('#chat-input').val('');
-				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
+				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'><?= session()->get("user_name");?></a></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
+				$('#log').scrollTop($('#log')[0].scrollHeight);
+
                 formData = {
 				question: msg,
 				query: msg,
@@ -825,7 +827,7 @@
 					data: formData,
 					success: function (response) {
 						setTimeout(function() {				
-			$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>Mayra Sibley</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
+			$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>Ignite</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
 			$('#log').scrollTop($('#log')[0].scrollHeight);
 			}, 1000);
 						

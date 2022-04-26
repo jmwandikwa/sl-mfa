@@ -14,7 +14,7 @@ class BlogModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["blog_title", "blog_content", "blog_created_at", "blog_author", "blog_status"];
+    protected $allowedFields    = ["blog_title","blog_cover","blog_description", "blog_content", "blog_created_at", "blog_author", "blog_status"];
 
     // Dates
     protected $useTimestamps = false;

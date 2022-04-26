@@ -13,12 +13,12 @@
 							<div class="box overflow-h">
 								<div class="box-body" style="height:18rem;">
 									<div class="d-flex justify-content-between align-items-center">
-										<h4 class="me-10 mb-0 fw-600">Jobs for Me</h4>
+										<h4 class="me-10 mb-0 fw-600">Events for Me</h4>
 										<img src="../../../images/svg-icon/img-1.png" class="img-fluid max-w-150 image-1" alt="" />
 									</div>
 									<div>
 										<a href="jobs.html" class="mt-5 btn btn-primary-light d-flex justify-content-between align-items-center">
-											<span class="text-overflow pe-5"><i class="fa fa-file-text me-10"></i><span class="fw-600">10</span> new jobs for you</span>
+											<span class="text-overflow pe-5"><i class="fa fa-file-text me-10"></i><span class="fw-600">10</span> new events posted</span>
 											<i class="fa fa-arrow-right"></i>
 										</a>
 									</div>
@@ -34,7 +34,7 @@
 									</div>
 									<div>
 										<a href="jobs.html" class="mt-5 btn btn-primary-light d-flex justify-content-between align-items-center">
-											<span class="text-overflow pe-5"><i class="fa fa-refresh me-10"></i><span class="fw-600">3</span> essential courses</span>
+											<span class="text-overflow pe-5"><i class="fa fa-refresh me-10"></i><span class="fw-600">3</span> essential Service Course Update</span>
 											<i class="fa fa-arrow-right"></i>
 										</a>
 									</div>
@@ -50,7 +50,7 @@
 									</div>
 									<div>
 										<a href="mailbox.html" class="mt-5 btn btn-primary-light d-flex justify-content-between align-items-center">
-											<span class="text-overflow pe-5"><i class="fa fa-commenting-o me-10"></i><span class="fw-600">4</span> New Messages </span>
+											<span class="text-overflow pe-5"><i class="fa fa-commenting-o me-10"></i><span class="fw-600">4</span> New Blog Posts </span>
 											<i class="fa fa-arrow-right"></i>
 										</a>
 									</div>

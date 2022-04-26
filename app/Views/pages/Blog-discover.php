@@ -34,7 +34,7 @@
 								<span><i class="fa fa-user me-2"></i> <a href="box_cards.html#"><?= session()->get('user_name'); ?></a></span>
 								<span class="text-success"><?= $post['blog_status'] ?></span>
 							</div>
-							<img class="card-img-top bter-0 btsr-0" src="/images/gallery/landscape9.jpg" alt="Card image cap">
+							<img class="card-img-top bter-0 btsr-0" src="/cover/<?= $post['blog_cover'];?>" alt="Card image cap">
 							<div class="card-body">
 							<h4 class="card-title fw-600"><?= $post['blog_title']; ?></h4>
 							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($post['blog_content'],0,200); ?></p>

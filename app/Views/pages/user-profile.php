@@ -66,17 +66,17 @@
 						<div class="card-body">
 							<ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
 								<li class="nav-item">
-									<a href="extra_profile.html#aboutme" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+									<a href="#aboutme" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
 										About
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="extra_profile.html#timelinest" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0 active">
+									<a href="#timelinest" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
 										Timeline
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="extra_profile.html#settings" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+									<a href="#settings" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
 										Settings
 									</a>
 								</li>

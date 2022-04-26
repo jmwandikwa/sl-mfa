@@ -53,6 +53,13 @@
                   <input type="text" id="title" class="form-control">
                </div>
             </div>
+            <div class="col-lg-5 col-12">
+               <div class="form-group">
+                  <label class="form-label">Post Description</label>
+                  <input type="text" id="description" class="form-control">
+               </div>
+            </div>
+
             <div class="col-lg-4 col-12">
                <div class="form-group">
                   <label class="form-label">Post Image</label>
@@ -173,10 +180,10 @@
 								<span><i class="fa fa-user me-2"></i> <a href="box_cards.html#"><?= session()->get('user_name'); ?></a></span>
 								<span class="text-success"><?= $blog['blog_status'] ?></span>
 							</div>
-							<img class="card-img-top bter-0 btsr-0" src="/images/gallery/landscape9.jpg" alt="Card image cap">
+							<img class="card-img-top bter-0 btsr-0" src="/covers/<?= $blog['blog_cover'];?>" alt="Card image cap">
 							<div class="card-body">
 							<h4 class="card-title fw-600"><?= $blog['blog_title']; ?></h4>
-							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($blog['blog_content'],0,200); ?></p>
+							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($blog['blog_description'],0,200); ?></p>
 							</div>
 							<div class="card-footer justify-content-between d-flex">
 							<ul class="list-inlin                                                                                                                                                                                                                                                                                           e mb-0 me-2">
@@ -190,7 +197,7 @@
 
 							<ul class="list-inline mb-0">
 								<li><a href="box_cards.html#">Edit</a></li>
-								<li><a href="box_cards.html#">Delete</a></li>
+								<button class="btn btn-xs" onclick="del(<?= $blog['blog_id']?>)">Delete</button>
 							</ul>
 							</div>
 							</div>
@@ -339,17 +346,28 @@
 
 <?php $this->section('scripts'); ?>
 <script>
+	function del(m){
+		$.ajax({
+			type: "get",
+			url: "/functions/deletepost/"+m,
+			success: function (response) {
+				alert(response);
+			}
+		});
+	}
     $("#publish").click(function (e) { 
         e.preventDefault();
         var title = $("#title").val();
         var content = CKEDITOR.instances.content.getData();
         var cartegory = $("#cartegory").val();
+        var description = $("#description").val();
         var formData = new FormData();
         formData.append('title', title);
         formData.append('content', content);
         formData.append('cartegory', cartegory);
+        formData.append('description', description);
         formData.append('cover', $("input[name='cover']")[0].files[0]);
-        if(content!='' && title !=''){
+        if(content!='' && title !='' && description !=''){
         $.ajax({
             url: '<?=base_url()?>/dashboard/blogCreate',
             type: 'POST',
@@ -377,6 +395,7 @@
         
         
     });
+	
 </script>
 <script src="/src/ckeditor/ckeditor.js"></script>
 <script>

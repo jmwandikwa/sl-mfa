@@ -36,10 +36,30 @@ class Dashboard extends BaseController
     }
     public function blogCreate()
     {
+        helper(['form', 'url']);
        $title = $this->request->getVar('title');
          $content = $this->request->getVar('content');
+         $description = $this->request->getVar('description');
+         $validateImage = $this->validate([
+            'cover' => [
+                'uploaded[file]',
+                'mime_in[file, image/png, image/jpg,image/jpeg, image/gif]',
+                'max_size[file, 4096]',
+            ],
+        ]);
+                $file = $this->request->getFile('cover');
+
+				$profile_image = $file->getName();
+
+				// Renaming file before upload
+				$temp = explode(".",$profile_image);
+				$newfilename = round(microtime(true)) . '.' . end($temp);
+         if($file->move("covers", $newfilename)) {
+				
             $data = [
                 'blog_title' => $title,
+                'blog_cover' => $newfilename,
+                'blog_description' => $description,
                 'blog_author' => session()->get('user_id'),
                 'blog_content' => $content,
                 'blog_created_at' => date('Y-m-d H:i:s'),
@@ -47,6 +67,7 @@ class Dashboard extends BaseController
             ];
             $model = new BlogModel();
             $model->insert($data);
+        }
 
     }
         public function userProfile()

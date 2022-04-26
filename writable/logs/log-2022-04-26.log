@@ -18,3 +18,56 @@ CRITICAL - 2022-04-26 08:07:31 --> Undefined variable $blog
 #8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
 #10 {main}
+CRITICAL - 2022-04-26 09:08:55 --> Too few arguments to function App\Controllers\Functions::deletePost(), 0 passed in /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->deletePost()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-26 13:35:58 --> Call to a member function getName() on null
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-04-26 13:47:22 --> Undefined variable $post
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/Blog-dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(27): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogDashboard()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-04-26 13:51:51 --> The original file is not a valid file.
+#0 /home/maxi/Documents/github/sl-updated/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(56): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-04-26 13:51:55 --> The original file is not a valid file.
+#0 /home/maxi/Documents/github/sl-updated/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(56): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-04-26 13:51:56 --> The original file is not a valid file.
+#0 /home/maxi/Documents/github/sl-updated/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/maxi/Documents/github/sl-updated/app/Controllers/Dashboard.php(56): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Dashboard->blogCreate()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
