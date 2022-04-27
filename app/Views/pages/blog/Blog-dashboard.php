@@ -141,6 +141,21 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-12 col-xl-3">
+				<div class="box bg-img box-inverse" style="background-image: url(../../../images/gallery/thumb/14.jpg);" data-overlay="5">				
+					<div class="box-header no-border">
+						<h4><i class="fa fa-android"></i></h4>
+						<ul class="box-controls pull-right">
+						  <li><a class="box-btn-close" href="widgets.html#"></a></li>
+						</ul>
+					</div>
+					<div class="box-body mt-90">
+						<span class="badge" data-overlay="5">New</span>
+						<h2 class="fw-200 mb-0">Blogging feature</h2>
+						<p class="text-white-70">Blog to get your  approved posts on them main site and awards</p>
+					</div>
+				</div>
+			</div>  
 </div>
 
 <div class="card bg-primary-light">

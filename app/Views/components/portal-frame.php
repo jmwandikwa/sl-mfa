@@ -45,7 +45,7 @@
 	  <div class="app-menu">
 		<ul class="header-megamenu nav">
 			<li class="btn-group nav-item">
-				<a href="index.html#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
+				<a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
 					<i data-feather="menu"></i>
 			    </a>
 			</li>
@@ -78,7 +78,7 @@
 					</label>
          </li>
 			<li class="dropdown notifications-menu btn-group ">
-				<a href="index.html#" class="waves-effect waves-light btn-primary-light svg-bt-icon" data-bs-toggle="dropdown" title="Notifications">
+				<a href="#" class="waves-effect waves-light btn-primary-light svg-bt-icon" data-bs-toggle="dropdown" title="Notifications">
 					<i data-feather="bell"></i>
 					<div class="pulse-wave"></div>
 			    </a>
@@ -90,7 +90,7 @@
 								<h4 class="mb-0 mt-0">Notifications</h4>
 							</div>
 							<div>
-								<a href="index.html#" class="text-danger">Clear All</a>
+								<a href="#" class="text-danger">Clear All</a>
 							</div>
 						</div>
 					</div>
@@ -99,37 +99,37 @@
 					<!-- inner menu: contains the actual data -->
 					<ul class="menu sm-scrol">
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-user text-primary"></i> Nunc fringilla lorem 
 						</a>
 					  </li>
 					  <li>
-						<a href="index.html#">
+						<a href="#">
 						  <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
 						</a>
 					  </li>
@@ -141,39 +141,39 @@
 				</ul>
 			</li>
 			<li class="btn-group nav-item d-xl-inline-flex d-none">
-				<a href="index.html#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="" id="live-chat">
+				<a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="" id="live-chat">
 					<i data-feather="message-circle"></i>
 			    </a>
 			</li>
 			
 			<li class="btn-group d-xl-inline-flex d-none">
-			    <a href="index.html#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon dropdown-toggle" data-bs-toggle="dropdown">
+			    <a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon dropdown-toggle" data-bs-toggle="dropdown">
 					<img class="rounded" src="../../../images/svg-icon/usa.svg" alt="">
 				</a>
 			    <div class="dropdown-menu">
-					<a class="dropdown-item my-5" href="index.html#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/usa.svg" alt=""> English</a>
-					<a class="dropdown-item my-5" href="index.html#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/spain.svg" alt=""> Spanish</a>
-					<a class="dropdown-item my-5" href="index.html#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/ger.svg" alt=""> German</a>
-					<a class="dropdown-item my-5" href="index.html#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/jap.svg" alt=""> Japanese</a>
-					<a class="dropdown-item my-5" href="index.html#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/fra.svg" alt=""> French</a>
+					<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/usa.svg" alt=""> English</a>
+					<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/spain.svg" alt=""> Spanish</a>
+					<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/ger.svg" alt=""> German</a>
+					<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/jap.svg" alt=""> Japanese</a>
+					<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/fra.svg" alt=""> French</a>
 			    </div>
 			</li>
 			
 			<li class="btn-group nav-item d-xl-inline-flex d-none">
-				<a href="index.html#" data-provide="fullscreen" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="Full Screen">
+				<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="Full Screen">
 					<i data-feather="maximize"></i>
 			    </a>
 			</li>					  
           <!-- Control Sidebar Toggle Button -->
           <li class="btn-group nav-item d-xl-inline-flex d-none">
-              <a href="index.html#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon">
+              <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon">
 			  	<i data-feather="sliders"></i>
 			  </a>
           </li>
 			
 			<!-- User Account-->
 			<li class="dropdown user user-menu">
-				<a href="index.html#" class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow" title="User" data-bs-toggle="modal" data-bs-target="#quick_user_toggle">
+				<a href="#" class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow" title="User" data-bs-toggle="modal" data-bs-target="#quick_user_toggle">
 					<img src="../../../images/avatar/avatar-13.png" class="avatar rounded-circle bg-primary-light h-40 w-40" alt="" />
 				</a>
 			</li>
@@ -197,7 +197,7 @@
 				  </a>
 				</li>									
 				<li class="treeview">
-				  <a href="index.html#">
+				  <a href="#">
 					<i data-feather="file-plus"></i>
 					<span>Blog</span>
 					<span class="pull-right-container">
@@ -211,7 +211,7 @@
 				  </ul>
 				</li> 
 				<li class="treeview">
-				  <a href="index.html#">
+				  <a href="#">
 					<i data-feather="file-plus"></i>
 					<span>Events</span>
 					<span class="pull-right-container">
@@ -219,16 +219,21 @@
 					</span>
 				  </a>					
 				  <ul class="treeview-menu">					
-					<li><a href="jobs.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Event Lists</a></li>
-					<li><a href="jobs_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Event details</a></li>	
-					<li><a href="applications.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Applications</a></li>	
-					<li><a href="extra_profile.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Profile</a></li>	
+					<li><a href="/dashboard/events-dash"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>My events</a></li>
+					<li><a href="/dashboard/events-discover"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>New Events</a></li>	
+					<li><a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>nothing</a></li>	
 				  </ul>
 				</li> 
 				<li>
-				  <a href="candidates.html">
+				  <a href="#">
 					<i data-feather="users"></i>
 					<span>Candidates</span>
+				  </a>
+				</li>   					
+				<li>
+				  <a href="/dashboard/chat">
+					<i data-feather="mail"></i>
+					<span>chat</span>
 				  </a>
 				</li>   					
 				<li>
@@ -238,7 +243,7 @@
 				  </a>
 				</li>   					
 				<li class="treeview">
-				  <a href="index.html#">
+				  <a href="#">
 					<i data-feather="headphones"></i>
 					<span>Support</span>
 					<span class="pull-right-container">
@@ -273,7 +278,7 @@
     <div class="pull-right d-none d-sm-inline-block">
         <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
 		  <li class="nav-item">
-			<a class="nav-link" href="index.html#" target="_blank">Ignition for recognition</a>
+			<a class="nav-link" href="#" target="_blank">Ignition for recognition</a>
 		  </li>
 		</ul>
     </div>
@@ -288,7 +293,7 @@
 			<div class="d-flex align-items-center justify-content-between pb-30">
 				<h4 class="m-0">User Profile
 				<small class="text-fade fs-12 ms-5">12 messages</small></h4>
-				<a href="index.html#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
+				<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
 					<span class="fa fa-close"></span>
 				</a>
 			</div>
@@ -345,7 +350,7 @@
               <div class="dropdown-divider my-30"></div>
               <div>
                 <div class="media-list">
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">10:10</h4>
                       <div class="media-body ps-15 bs-5 rounded border-primary">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
@@ -353,7 +358,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">08:40</h4>
                       <div class="media-body ps-15 bs-5 rounded border-success">
                         <p>Proin iaculis eros non odio ornare efficitur.</p>
@@ -361,7 +366,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">07:10</h4>
                       <div class="media-body ps-15 bs-5 rounded border-info">
                         <p>In mattis mi ut posuere consectetur.</p>
@@ -369,7 +374,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">01:15</h4>
                       <div class="media-body ps-15 bs-5 rounded border-danger">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
@@ -377,14 +382,14 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">23:12</h4>
                       <div class="media-body ps-15 bs-5 rounded border-warning">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
                         <span class="text-fade">by Alaxa</span>
                       </div>
                     </a>
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">10:10</h4>
                       <div class="media-body ps-15 bs-5 rounded border-primary">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
@@ -392,7 +397,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">08:40</h4>
                       <div class="media-body ps-15 bs-5 rounded border-success">
                         <p>Proin iaculis eros non odio ornare efficitur.</p>
@@ -400,7 +405,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">07:10</h4>
                       <div class="media-body ps-15 bs-5 rounded border-info">
                         <p>In mattis mi ut posuere consectetur.</p>
@@ -408,7 +413,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">01:15</h4>
                       <div class="media-body ps-15 bs-5 rounded border-danger">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
@@ -416,7 +421,7 @@
                       </div>
                     </a>
 
-                    <a class="media media-single px-0" href="index.html#">
+                    <a class="media media-single px-0" href="#">
                       <h4 class="w-50 text-gray fw-500">23:12</h4>
                       <div class="media-body ps-15 bs-5 rounded border-warning">
                         <p>Morbi quis ex eu arcu auctor sagittis.</p>
@@ -436,8 +441,8 @@
 	  
 	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger" data-toggle="control-sidebar"><i class="ion ion-close text-white" ></i></span> </div>  <!-- Create the tabs -->
     <ul class="nav nav-tabs control-sidebar-tabs">
-      <li class="nav-item"><a href="index.html#control-sidebar-home-tab" data-bs-toggle="tab" ><i class="mdi mdi-message-text"></i></a></li>
-      <li class="nav-item"><a href="index.html#control-sidebar-settings-tab" data-bs-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-bs-toggle="tab" ><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-bs-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
@@ -455,12 +460,12 @@
 		  </div>
           <div class="media-list media-list-hover mt-20">
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-success" href="index.html#">
+			  <a class="avatar avatar-lg status-success" href="#">
 				<img src="../../../images/avatar/1.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Tyler</strong></a>
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
 				</p>
 				<p>Praesent tristique diam...</p>
 				  <span>Just now</span>
@@ -468,12 +473,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-danger" href="index.html#">
+			  <a class="avatar avatar-lg status-danger" href="#">
 				<img src="../../../images/avatar/2.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Luke</strong></a>
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
 				</p>
 				<p>Cras tempor diam ...</p>
 				  <span>33 min ago</span>
@@ -481,12 +486,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-warning" href="index.html#">
+			  <a class="avatar avatar-lg status-warning" href="#">
 				<img src="../../../images/avatar/3.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Evan</strong></a>
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
 				</p>
 				<p>In posuere tortor vel...</p>
 				  <span>42 min ago</span>
@@ -494,12 +499,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-primary" href="index.html#">
+			  <a class="avatar avatar-lg status-primary" href="#">
 				<img src="../../../images/avatar/4.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Evan</strong></a>
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
 				</p>
 				<p>In posuere tortor vel...</p>
 				  <span>42 min ago</span>
@@ -507,12 +512,12 @@
 			</div>			
 			
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-success" href="index.html#">
+			  <a class="avatar avatar-lg status-success" href="#">
 				<img src="../../../images/avatar/1.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Tyler</strong></a>
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
 				</p>
 				<p>Praesent tristique diam...</p>
 				  <span>Just now</span>
@@ -520,12 +525,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-danger" href="index.html#">
+			  <a class="avatar avatar-lg status-danger" href="#">
 				<img src="../../../images/avatar/2.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Luke</strong></a>
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
 				</p>
 				<p>Cras tempor diam ...</p>
 				  <span>33 min ago</span>
@@ -533,12 +538,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-warning" href="index.html#">
+			  <a class="avatar avatar-lg status-warning" href="#">
 				<img src="../../../images/avatar/3.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Evan</strong></a>
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
 				</p>
 				<p>In posuere tortor vel...</p>
 				  <span>42 min ago</span>
@@ -546,12 +551,12 @@
 			</div>
 
 			<div class="media py-10 px-0">
-			  <a class="avatar avatar-lg status-primary" href="index.html#">
+			  <a class="avatar avatar-lg status-primary" href="#">
 				<img src="../../../images/avatar/4.jpg" alt="...">
 			  </a>
 			  <div class="media-body">
 				<p class="fs-16">
-				  <a class="hover-primary" href="index.html#"><strong>Evan</strong></a>
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
 				</p>
 				<p>In posuere tortor vel...</p>
 				  <span>42 min ago</span>
@@ -716,26 +721,26 @@
                       <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
                   </button>
                   <div class="dropdown-menu min-w-200">
-                    <a class="dropdown-item fs-16" href="index.html#">
+                    <a class="dropdown-item fs-16" href="#">
                         <span class="icon-Color me-15"></span>
                         New Group</a>
-                    <a class="dropdown-item fs-16" href="index.html#">
+                    <a class="dropdown-item fs-16" href="#">
                         <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
                         Contacts</a>
-                    <a class="dropdown-item fs-16" href="index.html#">
+                    <a class="dropdown-item fs-16" href="#">
                         <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
                         Groups</a>
-                    <a class="dropdown-item fs-16" href="index.html#">
+                    <a class="dropdown-item fs-16" href="#">
                         <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
                         Calls</a>
-                    <a class="dropdown-item fs-16" href="index.html#">
+                    <a class="dropdown-item fs-16" href="#">
                         <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
                         Settings</a>
                     <div class="dropdown-divider"></div>
-					<a class="dropdown-item fs-16" href="index.html#">
+					<a class="dropdown-item fs-16" href="#">
                         <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
                         Help</a>
-					<a class="dropdown-item fs-16" href="index.html#">
+					<a class="dropdown-item fs-16" href="#">
                         <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
                         Privacy</a>
                   </div>
@@ -812,9 +817,9 @@
 		
 			$('#chat-send').click(function(){
 				var msg = $('#chat-input').val();
-				// $("chat-logs").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>You</a><p class='text-muted fs-12 mb-0'>3 minutes</p></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+m+"</div></div>");
+				// $("chat-logs").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='#' class='text-dark hover-primary fw-bold'>You</a><p class='text-muted fs-12 mb-0'>3 minutes</p></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+m+"</div></div>");
 				$('#chat-input').val('');
-				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'><?= session()->get("user_name");?></a></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
+				$("#log").append("<div class='chat-msg self'><div class='d-flex align-items-center justify-content-end'><div class='mx-10'><a href='#' class='text-dark hover-primary fw-bold'><?= session()->get("user_name");?></a></div><span class='msg-avatar'><img src='../../../images/avatar/3.jpg' class='avatar avatar-lg' alt=''></span></div><div class='cm-msg-text'>"+msg+"</div></div>");
 				$('#log').scrollTop($('#log')[0].scrollHeight);
 
                 formData = {
@@ -827,7 +832,7 @@
 					data: formData,
 					success: function (response) {
 						setTimeout(function() {				
-			$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='index.html#' class='text-dark hover-primary fw-bold'>Ignite</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
+			$("#log").append("<div class='chat-msg user'><div class='d-flex align-items-center'><span class='msg-avatar'><img src='../../../images/avatar/2.jpg' class='avatar avatar-lg' alt='></span><div class='mx-10'><a href='#' class='text-dark hover-primary fw-bold'>Ignite</a></div></div><div class='cm-msg-text'>"+response+"</div></div>");
 			$('#log').scrollTop($('#log')[0].scrollHeight);
 			}, 1000);
 						

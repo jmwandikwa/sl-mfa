@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\BlogModel;
 use App\Models\UserModel;
+use App\Models\EventModel;
 
 class Dashboard extends BaseController
 {
@@ -22,17 +23,17 @@ class Dashboard extends BaseController
     public function blogDashboard()
     {
         $model = new BlogModel();
-        $data['blogs'] = $model->where("blog_author",session()->get('user_id'))->findAll();
+        $data['blogs'] = $model->where("blog_author",session()->get('user_id'))->orderBy('blog_id','desc')->findAll();
         $data['title'] = "user Blog";
-        return view('/pages/Blog-dashboard', $data);
+        return view('/pages/blog/Blog-dashboard', $data);
 
     }
     public function blogDiscover()
     {
         $model = new BlogModel();
-        $data['posts'] = $model->findAll();
+        $data['posts'] = $model->orderBy('blog_id','desc')->findAll();
         $data['title'] = "user Blog";
-        return view('/pages/Blog-discover', $data);
+        return view('/pages/blog/Blog-discover', $data);
     }
     public function blogCreate()
     {
@@ -127,4 +128,42 @@ class Dashboard extends BaseController
             echo $response;
         }
 
+        public function Eventsdashboard()
+        {
+            $model = new EventModel();
+            $data['events'] = $model->where("event_author",session()->get('user_id'))->orderBy('event_id','desc')->findAll();
+            $data['title'] = "Events Page";
+            return view('/pages/events/Events-dashboard', $data);
+
+        }
+        public function Eventsexplore()
+        {
+            $model = new EventModel();
+            $data['events'] = $model->orderBy('event_id','desc')->findAll();
+            $data['title'] = "Running Events";
+            return view('/pages/events/Events-discover', $data);
+
+        }
+        public function EventsUpload()
+        {
+           $model = new EventModel();
+           $title = $this->request->getVar('title');
+           $venue = $this->request->getVar('venue'); 
+           $date = $this->request->getVar('date'); 
+           $description = $this->request->getVar('description'); 
+            $data = [
+                "event_title"=> $title,
+                "event_author"=> session()->get("user_id"),
+                "event_venue"=>$venue,
+                "event_date"=>$date,
+                "event_description"=>$description,
+            ];
+            if($model->save($data)){
+
+                echo $date;
+            }else{
+                echo "nop";
+            }
+
+        }
 }

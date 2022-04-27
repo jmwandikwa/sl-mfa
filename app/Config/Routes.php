@@ -42,6 +42,9 @@ $routes->get('/forgot', 'Forgot::index');
 $routes->get('/dashboard/profile', 'Dashboard::userProfile',['filter' => 'auth']);
 $routes->get('/dashboard/blog-dash', 'Dashboard::blogDashboard',['filter' => 'auth']);
 $routes->get('/dashboard/discover', 'Dashboard::blogDiscover',['filter' => 'auth']);
+$routes->get('/dashboard/events-dash', 'Dashboard::Eventsdashboard',['filter' => 'auth']);
+$routes->get('/dashboard/events-discover', 'Dashboard::Eventsexplore',['filter' => 'auth']);
+$routes->get('/dashboard/chat', 'Chat::index',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

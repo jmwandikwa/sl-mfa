@@ -15,7 +15,7 @@
 									<?= session()->getFlashdata('msg'); ?>
 								</div>
 								<?php endif; ?>
-								<p class="mb-0 text-fade">Sign in to continue to EmployX.</p>							
+								<p class="mb-0 text-fade">Sign in to continue to Sl-Mfa.</p>							
 							</div>
 							<div class="p-40">
 								<form action="/login/auth" method="post">
