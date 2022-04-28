@@ -199,7 +199,8 @@
 									</div>
 								</div>
 								<div class="mt-10 d-flex justify-content-between align-items-center">
-									<a href="jobs_details.html" class="waves-effect waves-light btn btn-primary mb-5">Join Event</a>
+									<a href="#" class="waves-effect waves-light btn btn-primary mb-5">Edit Event</a>
+									<a href="#" class="waves-effect waves-light btn btn-danger mb-5">Cancel Event</a>
 									<p class="mb-0 text-fade"><i class="fa fa-map-marker"></i><?= $event['event_venue']; ?></p>
 								</div>
 							</div>

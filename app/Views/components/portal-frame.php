@@ -19,7 +19,7 @@
      
   </head>
 
-<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+<body class="hold-transition light-skin sidebar-mini theme-info sidebar-collapse fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
@@ -29,12 +29,12 @@
 		<!-- Logo -->
 		<a href="" class="logo">
 		  <!-- logo-->
-		  <div class="logo-mini w-100">
-			  <span class="light-logo"><img src="/images/logo.png" alt="logo"></span>
-			  <span class="dark-logo"><img src="/images/logo.png" alt="logo"></span>
+		  <div class="logo-mini w-60">
+			  <span class="light-logo"><img src="/images/logo2.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="/images/logo2.png" alt="logo"></span>
 		  </div>
 		  <div class="logo-lg">
-			  <span class="light-logo">Sl</span>
+			  <span class="light-logo text-secondary">Service learning</span>
 			  <span class="dark-logo">SL</span>
 		  </div>
 		</a>	
@@ -183,9 +183,9 @@
     </nav>
   </header>
   
-  <aside class="main-sidebar">
+  <aside class="main-sidebar collapsed">
     <!-- sidebar-->
-    <section class="sidebar position-relative"> 
+    <section class="sidebar position-fixed"> 
 	  	<div class="multinav">
 		  <div class="multinav-scroll" style="height: 97%;">	
 			  <!-- sidebar menu-->
@@ -315,7 +315,7 @@
                           <span class="icon-Library fs-24"><span class="path1"></span><span class="path2"></span></span>
                     </div>
                     <div class="d-flex flex-column fw-500">
-                        <a href="extra_profile.html" class="text-dark hover-primary mb-1 fs-16">My Profile</a>
+                        <a href="/dashboard/profile" class="text-dark hover-primary mb-1 fs-16">My Profile</a>
                         <span class="text-fade">Account settings and more</span>
                     </div>
                 </div>
