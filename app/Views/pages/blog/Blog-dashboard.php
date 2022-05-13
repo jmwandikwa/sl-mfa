@@ -235,7 +235,7 @@
 								<span><i class="fa fa-user me-2"></i> <a href="box_cards.html#"><?= session()->get('user_name'); ?></a></span>
 								<span class="text-success"><?= $blog['blog_status'] ?></span>
 							</div>
-							<img class="card-img-top bter-0 btsr-0" src="/images/gallery/landscape9.jpg" alt="Card image cap">
+							<img class="card-img-top bter-0 btsr-0" src="/covers/<?= $blog['blog_cover'];?>" alt="Card image cap">
 							<div class="card-body">
 							<h4 class="card-title fw-600"><?= $blog['blog_title']; ?></h4>
 							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($blog['blog_content'],0,200); ?></p>
@@ -276,7 +276,7 @@
 								<span><i class="fa fa-user me-2"></i> <a href="box_cards.html#"><?= session()->get('user_name'); ?></a></span>
 								<span class="text-success"><?= $blog['blog_status'] ?></span>
 							</div>
-							<img class="card-img-top bter-0 btsr-0" src="/images/gallery/landscape9.jpg" alt="Card image cap">
+							<img class="card-img-top bter-0 btsr-0" src="/covers/<?= $blog['blog_cover'];?>" alt="Card image cap">
 							<div class="card-body">
 							<h4 class="card-title fw-600"><?= $blog['blog_title']; ?></h4>
 							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($blog['blog_content'],0,200); ?></p>
@@ -316,7 +316,7 @@
 								<span><i class="fa fa-user me-2"></i> <a href="box_cards.html#"><?= session()->get('user_name'); ?></a></span>
 								<span class="text-success"><?= $blog['blog_status'] ?></span>
 							</div>
-							<img class="card-img-top bter-0 btsr-0" src="/images/gallery/landscape9.jpg" alt="Card image cap">
+							<img class="card-img-top bter-0 btsr-0" src="/covers/<?= $blog['blog_cover'];?>" alt="Card image cap">
 							<div class="card-body">
 							<h4 class="card-title fw-600"><?= $blog['blog_title']; ?></h4>
 							<p class="card-text text-gray-600" style="text-overflow: ellipsis;"><?= substr($blog['blog_content'],0,200); ?></p>
@@ -362,14 +362,48 @@
 <?php $this->section('scripts'); ?>
 <script>
 	function del(m){
-		$.ajax({
-			type: "get",
-			url: "/functions/deletepost/"+m,
-			success: function (response) {
-				alert(response);
+		// $.ajax({
+		// 	type: "get",
+		// 	url: "/functions/deletepost/"+m,
+		// 	success: function (response) {
+		// 		alert(response);
+		// 	}
+		// });
+				swal({
+			title: "Are you sure?",
+			text: "Once deleted, you will not be able to recover this imaginary file!",
+			icon: "warning",
+			buttons: true,
+			dangerMode: true,
+			})
+			.then((willDelete) => {
+			if (willDelete) {
+				//    ajax 
+				$.ajax({
+					type: "POST",
+					url: "/functions/deletepost/"+m,
+					success: function (response) {
+						swal("Event Deleted", {
+							icon: "success",
+						});
+						setTimeout(() => {
+							location.reload();
+							
+						}, 1000);
+					},
+					error: function(e){
+						swal("Error deleting your event", {
+							icon: "error",
+						});
+					}
+				});
+				//  ajax end
+				
+			} else {
+				swal("Event Not Deleted");
 			}
-		});
-	}
+			});
+}
     $("#publish").click(function (e) { 
         e.preventDefault();
         var title = $("#title").val();
@@ -390,7 +424,8 @@
             contentType: false,
             processData: false,
             success: function (data) {
-                $('#alert').html('<div class="alert text-center alert-success">Post published</div>');
+				swal("Success", "Post Published Succesfully", "success");
+                // $('#alert').html('<div class="alert text-center alert-success">Post published</div>');
                 setTimeout(function() {
             $('#alert').html('');
             $("#title").val('');
@@ -401,12 +436,15 @@
             }
         });
     }else{
-        $('#alert').html('<div class="alert text-center alert-danger">Please fill all fields</div>');
-        setTimeout(function() {
-            $('#alert').html('');
-}, 4000);
+		swal("error", "please fill in all the fields", "error");
+
+        // $('#alert').html('<div class="alert text-center alert-danger">Please fill all fields</div>');
+//         setTimeout(function() {
+//             $('#alert').html('');
+// }, 4000);
         
-    }
+//     
+			}
         
         
     });

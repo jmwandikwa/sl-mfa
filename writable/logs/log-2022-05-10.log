@@ -1,0 +1,131 @@
+CRITICAL - 2022-05-10 05:36:40 --> Undefined variable $time
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/chat/insert-chat.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Home.php(63): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Home->insertChat()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-05-10 05:38:11 --> Undefined variable $time
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/chat/insert-chat.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Home.php(63): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Home->insertChat()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-05-10 05:38:34 --> Undefined variable $time
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/chat/insert-chat.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Home.php(63): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Home->insertChat()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-05-10 05:38:37 --> Undefined variable $time
+#0 /home/maxi/Documents/github/sl-updated/app/Views/pages/chat/insert-chat.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/View/View.php(210): include('...')
+#2 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/maxi/Documents/github/sl-updated/app/Controllers/Home.php(63): view()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Home->insertChat()
+#6 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-05-10 06:50:04 --> syntax error, unexpected token ";"
+#0 /home/maxi/Documents/github/sl-updated/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/maxi/Documents/github/sl-updated/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/maxi/Documents/github/sl-updated/app/Controllers/Home.php(16): view()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Home->Dashboard()
+#4 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-05-10 07:32:08 --> Call to undefined method App\Models\EventModel::last
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Functions.php(184): CodeIgniter\Model->__call()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-10 07:32:57 --> Call to undefined method App\Models\EventModel::oderBy
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Functions.php(184): CodeIgniter\Model->__call()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-10 08:06:55 --> Undefined property: App\Controllers\Functions::$db
+#0 /home/maxi/Documents/github/sl-updated/app/Controllers/Functions.php(188): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-05-10 08:09:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:09:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:10:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::order_by()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:11:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::order_by()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:11:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::order_by()
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:15:03 --> Call to a member function limit() on array
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-05-10 08:15:32 --> Call to a member function limit() on array
+#0 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(832): App\Controllers\Functions->getEv()
+#1 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /home/maxi/Documents/github/sl-updated/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/maxi/Documents/github/sl-updated/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/maxi/Documents/github/sl-updated/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}

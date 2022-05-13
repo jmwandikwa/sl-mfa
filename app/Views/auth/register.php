@@ -10,11 +10,11 @@
 						<div class="bg-gray-800 rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<h2 class="text-primary fw-600">Get started with Us</h2>
-								<?php if(isset($validation)):?>
-								<div class="alert alert-danger">
-									<?= $validation->listErrors() ?>
+								
+								<div id="alert">
+									
 								</div>
-								<?php endif;?>
+								
 								<p class="mb-0 text-fade">Register a new membership</p>	
                                 
 							</div>
@@ -23,7 +23,7 @@
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<span class="input-group-text"><i class="text-fade ti-user"></i></span>
-											<input type="text" name="name" class="form-control ps-15" placeholder="Full Name">
+											<input type="text" name="name" class="form-control ps-15" placeholder="Full Name"/>
 										</div>
 									</div>
 									<div class="form-group">
@@ -53,7 +53,7 @@
 										</div>
 										<!-- /.col -->
 										<div class="col-12 text-center">
-											<button type="submit" class="btn btn-primary w-p100 mt-10">REGISTER</button>
+											<button id ="register" class="btn btn-primary w-p100 mt-10">REGISTER</button>
 										</div>
 										<!-- /.col -->
 									  </div>
@@ -70,3 +70,50 @@
 		</div>
 	</div>
     <?php $this->endSection(); ?>
+
+	<?php $this->section('script'); ?>
+	<script>
+		$(document).ready(function () {
+			$("#register").click(function (e) { 
+				e.preventDefault();
+				var name = $("input[name='name']").val();
+				var email = $("input[name='email']").val();
+				var password = $("input[name='password']").val();
+				var confpassword = $("input[name='confpassword']").val();
+				if(name == '' || email == '' || password == '' || confpassword == ''){
+					$("#alert").addClass("alert alert-danger").html("<strong>Error!</strong> All fields are required");
+							setTimeout(function() {
+								$('#alert').html('').removeClass('alert alert-danger');
+							}, 2000);
+				}
+				else if(password != confpassword)
+				{
+					$("#alert").addClass("alert alert-danger").html("<strong>Error!</strong> Password and Confirm Password does not match");
+							setTimeout(function() {
+								$('#alert').html('').removeClass('alert alert-danger');
+							}, 2000);
+				}
+				else{
+					$.ajax({
+					url: '/register/save',
+					type: 'POST',
+					data: $('form').serialize(),
+					success: function (data) {
+						if(data== 'success'){
+							window.location.href = '/login';
+						}else{
+							$("#alert").addClass("alert alert-danger").html("<strong>Error!</strong> email already Registered");
+							setTimeout(function() {
+								$('#alert').html('').removeClass('alert alert-danger');
+							}, 2000);
+							
+						}
+					}
+				});
+				}
+				
+				
+			});
+		});
+	</script>
+	<?php $this->endSection(); ?>

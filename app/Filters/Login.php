@@ -25,14 +25,11 @@ class Login implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-       $session = session();
-       if($session->get('logged_in'))
+       
+       if(session()->get('logged_in'))
        {
-         return redirect()->to('/dashboard');
-       }elseif(!$session->get('logged_in') && $session->get('user_name')!= '')
-       {
-           return redirect()->to('/screen');
-       }
+           return redirect()->to(base_url('/dashboard'));
+    }
     }
 
     /**
@@ -49,6 +46,6 @@ class Login implements FilterInterface
      */
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        //
+      
     }
 }

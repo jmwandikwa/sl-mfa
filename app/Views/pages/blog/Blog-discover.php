@@ -12,7 +12,7 @@
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="sample_faq.html#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item" aria-current="page">Sample Page</li>
+								<li class="breadcrumb-item" aria-current="page">Blog Discover</li>
 								<li class="breadcrumb-item active" aria-current="page">FAQ</li>
 							</ol>
 						</nav>
@@ -29,29 +29,29 @@
 		<div class="col-xl-4 col-md-6 col-12">
 				<div class="blog-post rounded">
 					<div class="entry-image clearfix">
-							<div class="item">
+							<div class="item h-3">
 								<img src="/covers/<?= $post['blog_cover'];?>" alt="">
 							</div>
 							
 					</div>
 					<div class="blog-detail">
 						<div class="entry-title mb-10">
-							<a href=""><?= $post['blog_title'];?></a>
+							<a href="/dashboard/blog/<?= $post['blog_id'];?>"><?= $post['blog_title'];?></a>
 						</div>
 						
 						<div class="entry-meta mb-10">
 							<ul class="list-unstyled">
-								<li><a href="widgets_blog.html#" class="text-mute hover-primary"><i class="fa fa-folder-open-o"></i>General</a></li>
-								<li><a href="widgets_blog.html#" class="text-mute hover-primary"><i class="fa fa-comment-o"></i> 5</a></li>
-								<li><a href="widgets_blog.html#" class="text-mute hover-primary"><i class="fa fa-calendar-o"></i><?= $post['blog_created_at'];?></a></li>
+								<li><a href="" class="text-mute hover-primary"><i class="fa fa-folder-open-o"></i>General</a></li>
+								<!-- <li><a href="widgets_blog.html#" class="text-mute hover-primary"><i class="fa fa-comment-o"></i> 5</a></li> -->
+								<li><a href="" class="text-mute hover-primary"><i class="fa fa-calendar-o"></i><?= mb_strimwidth($post['blog_created_at'],0,10);?></a></li>
 							</ul>
 						</div>
 						<div class="entry-content">
-										<p class="text-gray-600"><?= $post['blog_description'];?></p>
+										<p class="text-gray-600"><?= mb_strimwidth($post['blog_description'], 0, 150, "<a href='#'>...Read More</a>"); ?></p>
 									</div>
 						<div class="entry-share d-flex justify-content-between align-items-center">
 							<div class="entry-button">
-								<a href="#" class="btn btn-primary-light btn-sm">Read more</a>
+								<a href="/dashboard/blog/<?= $post['blog_id'];?>" class="btn btn-primary-light btn-sm">Read more</a>
 							</div>
 							<div class="social">
 								<strong>Share : </strong>

@@ -33,9 +33,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index', ['filter' => 'auth']);
 $routes->get('/users', 'Home::users',['filter' => 'auth']);
+$routes->get('/register', 'Register::index',['filter' => 'Login']);
 $routes->get('/login', 'Home::login',['filter' => 'Login']);
 $routes->get('/dashboard', 'Home::Dashboard',['filter' => 'auth']);
-$routes->get('/screen', 'Home::lockScreen',['filter' => 'auth']);
+$routes->get('/screen', 'Home::lockScreen/',['filter' => 'Screen']);
 $routes->get('/faq', 'Home::faq',['filter' => 'auth']);
 $routes->get('/logout', 'Login::logout');
 $routes->get('/forgot', 'Forgot::index');
@@ -45,7 +46,16 @@ $routes->get('/dashboard/discover', 'Dashboard::blogDiscover',['filter' => 'auth
 $routes->get('/dashboard/events-dash', 'Dashboard::Eventsdashboard',['filter' => 'auth']);
 $routes->get('/dashboard/events-discover', 'Dashboard::Eventsexplore',['filter' => 'auth']);
 $routes->get('/dashboard/chat', 'Chat::index',['filter' => 'auth']);
+$routes->get('dashboard/event/(:num)', 'Dashboard::EventView/$1',['filter' => 'auth']);
+$routes->get('dashboard/blog/(:num)', 'Dashboard::BlogView/$1',['filter' => 'auth']);
 
+// chat page 
+
+$routes->get('/usersphp', 'Home::usersPhp');
+$routes->post('/getchat', 'Home::getChat');
+$routes->post('/loadchat', 'Home::loadChat');
+$routes->post('/insertchat', 'Home::insertChat');
+// chat page end
 /*
  * --------------------------------------------------------------------
  * Additional Routing

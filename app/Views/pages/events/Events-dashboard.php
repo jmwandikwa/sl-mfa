@@ -94,25 +94,24 @@
 <!-- create post -->
 
             <div class="row">
-                <div class="col-xl-6"> 
+
+            <div class="col-xl-3">
 				<div class="box">
 					<div class="box-body d-flex p-0">
-						<div class="flex-grow-1 p-30 flex-grow-1 bg-img" style="background-position: left bottom; background-size: auto 80%; background-image: url(../../../images/svg-icon/color-svg/custom-2.svg)">
-							<div class="row">
-								<div class="col-12 col-xl-7"></div>
-								<div class="col-12 col-xl-5">
-									<h4 class="text-primary fw-500">Explore and Join upcoming events</h4>
+						<div class="flex-grow-1 bg-danger p-30 flex-grow-1 bg-img" style="background-position: calc(100% + 0.5rem) bottom; background-size: auto 100%; background-image: url(../../../images/svg-icon/color-svg/custom-3.svg)">
 
-									<p class="text-fade my-10 fs-16">
-										Check out open events from your peers and signup to participate in them.
-									</p>
-									<a href="widgets.html#" class="btn btn-primary-light">Explore</a>
-								</div>
-							</div>
+							<h4 class="fw-500">Be The manager</h4>
+
+							<p class="my-10 fs-16 text-white-70">
+								Create an event to get signups <br>and participants for your service.
+							</p>
+
+							<a data-bs-toggle="modal" data-bs-target="#full-width-modal"class="btn btn-danger-light">Create Event</a>
 						</div>
 					</div>
 				</div>
 			</div>
+            
             <div class="col-xl-3">
 				<div class="box">
 					<div class="box-body d-flex p-0">
@@ -140,22 +139,27 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-xl-3">
+            <div class="col-xl-6"> 
 				<div class="box">
 					<div class="box-body d-flex p-0">
-						<div class="flex-grow-1 bg-danger p-30 flex-grow-1 bg-img" style="background-position: calc(100% + 0.5rem) bottom; background-size: auto 100%; background-image: url(../../../images/svg-icon/color-svg/custom-3.svg)">
+						<div class="flex-grow-1 bg-warning p-30 flex-grow-1 bg-img" style="background-position: left bottom; background-size: auto 80%; background-image: url(../../../images/svg-icon/color-svg/custom-2.svg)">
+							<div class="row">
+								<div class="col-12 col-xl-7"></div>
+								<div class="col-12 col-xl-5">
+									<h4 class="text-primary fw-500">Explore and Join upcoming events</h4>
 
-							<h4 class="fw-500">Be The manager</h4>
-
-							<p class="my-10 fs-16 text-white-70">
-								Create an event to get signups <br>and participants for your service.
-							</p>
-
-							<a data-bs-toggle="modal" data-bs-target="#full-width-modal"class="btn btn-danger-light">Create Event</a>
+									<p class="text-white-70 my-10 fs-16">
+										Check out open events from your peers and signup to participate in them.
+									</p>
+									<a href="/dashboard/events-discover" class="btn btn-primary-light">Explore</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+            
+            <!-- here -->
         </div>
 
             <div class="card bg-primary-light">
@@ -200,7 +204,7 @@
 								</div>
 								<div class="mt-10 d-flex justify-content-between align-items-center">
 									<a href="#" class="waves-effect waves-light btn btn-primary mb-5">Edit Event</a>
-									<a href="#" class="waves-effect waves-light btn btn-danger mb-5">Cancel Event</a>
+									<a onclick="deleteEvent(<?= $event['event_id'];?>)" class="waves-effect waves-light btn btn-danger mb-5">Delete</a>
 									<p class="mb-0 text-fade"><i class="fa fa-map-marker"></i><?= $event['event_venue']; ?></p>
 								</div>
 							</div>
@@ -227,7 +231,7 @@
         $("#publish").click(function (e) { 
         e.preventDefault();
         var title = $("#title").val();
-        var content = CKEDITOR.instances.description.getData();
+        var content = CKEDITOR.instances.description.document.getBody().getText();
         var venue = $("#venue").val();
         var date = $("#date").val();
         
@@ -272,6 +276,46 @@
         });
     });
    
+
+
+
+   function deleteEvent(id){
+    swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    //    ajax 
+    $.ajax({
+        type: "POST",
+        url: "/functions/deleteevent",
+        data: {"event_id":id},
+        success: function (response) {
+            swal("Event Deleted", {
+                icon: "success",
+            });
+            setTimeout(() => {
+                location.reload();
+                
+            }, 1000);
+        },
+        error: function(e){
+            swal("Error deleting your event", {
+                icon: "error",
+            });
+        }
+    });
+    //  ajax end
+    
+  } else {
+    swal("Event Not Deleted");
+  }
+});
+    }
 </script>
 
 

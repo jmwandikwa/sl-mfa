@@ -7,7 +7,7 @@
 		<!-- Main content -->
 		<section class="content">
 			<div class="row">
-				<div class="col-lg-4 col-12">
+				<div class="col-sm-5 col-12">
 					<div class="box">
 						<div class="box-header no-border p-0">
 							<ul class="nav nav-tabs nav-bordered" role="tablist">
@@ -30,24 +30,10 @@
 									</div>
 									<!-- end search box -->
 									<div class="chat-box-one-side3">
-										<div class="media-list media-list-hover">
-											<a href="javascript:void(0);" class="media p-0">
-												<div class="w-p100 d-flex align-items-center m-1 p-2">
-													<img src="../../../images/avatar/avatar-9.png" class="bg-light ms-0 me-2 rounded-circle" height="48" alt="Brandon Smith" />
-													<div class="w-p100 overflow-hidden">
-														<h5 class="mt-0 mb-0 fs-14 fw-600">
-															<span class="float-end text-muted fs-12 fw-400">4:30am</span>
-															Brandon Smith
-														</h5>
-														<p class="mt-1 mb-0 text-muted fs-14">
-															<span class="w-25 float-end text-end"><span class="badge badge-danger-light">3</span></span>
-															<span class="w-75 text-dark">How are you today?</span>
-														</p>
-													</div>
-												</div>
-											</a>
+										<div id="inbox" class="media-list media-list-hover">
+											
 
-											<a href="javascript:void(0);" class="media p-0 bg-gray-300">
+											<!-- <a href="javascript:void(0);" class="media p-0 bg-gray-300">
 												<div class="w-p100 d-flex align-items-center m-1 p-2">
 													<img src="../../../images/avatar/avatar-1.png" class="bg-light ms-0 me-2 rounded-circle" height="48" alt="Sarah Kortney" />
 													<div class="w-p100 overflow-hidden">
@@ -60,23 +46,9 @@
 														</p>
 													</div>
 												</div>
-											</a>
+											</a> -->
 
-											<a href="javascript:void(0);" class="media p-0">
-												<div class="w-p100 d-flex align-items-center m-1 p-2">
-													<img src="../../../images/avatar/avatar-4.png" class="bg-light ms-0 me-2 rounded-circle" height="48" alt="Maria C" />
-													<div class="w-p100 overflow-hidden">
-														<h5 class="mt-0 mb-0 fs-14 fw-600">
-															<span class="float-end text-muted fs-12 fw-400">Thu</span>
-															Maria C
-														</h5>
-														<p class="mt-1 mb-0 text-muted fs-14">
-															<span class="w-25 float-end text-end"><span class="badge badge-danger-light">2</span></span>
-															<span class="w-75 text-dark">Are we going to have this week's planning meeting today?</span>
-														</p>
-													</div>
-												</div>
-											</a>
+										
 
 											
 
@@ -88,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8 col-12">
+				<div class="col-sm-7 col-12">
 					<div class="box">
 					  <div class="box-header">
 						<div class="media align-items-top p-0">
@@ -126,14 +98,14 @@
 											<p class="mb-0 text-dark">What do you think about our plans for this product launch?</p>
 										</div>
 									</div>
-									<div class="mt-5 card-body p-15 bg-info-light rounded10 d-inline-block">
+								<div class="clearfix"></div><div class="mt-5 card-body p-15 bg-info-light rounded10 d-inline-block">
 										<div class="chat-text-start">
 											<p class="mb-0 text-dark">It looks to me like you have a lot planned before your deadline. I would suggest you push your deadline back so you have time to run a successful advertising campaign.</p>
 										</div>
 									</div>
 										<p class="ps-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
 							  </div>
-							  <div class="clearfix"></div>
+							  
 
 							  <div class="card no-border d-inline-block my-20 text-end float-end me-2 no-shadow max-w-p80">										  
 									<div class="d-flex flex-row pb-2 align-items-center justify-content-end">
@@ -156,101 +128,9 @@
 							  </div>
 							  <div class="clearfix"></div>
 
-							  <div class="card no-border d-inline-block my-20 float-start me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center">
-										<a class="d-flex align-items-center" href="#">
-											<img alt="Profile" src="../../../images/avatar/avatar-1.png" class="bg-light avatar rounded-circle me-10">
-											<p class="mb-0 fs-14 fw-500 text-dark">Sarah Kortney</p>
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-info-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">Yeah everything is fine</p>
-										</div>
-									</div>
-										<p class="ps-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
+							 
 
-							  <div class="card no-border d-inline-block my-20 text-end float-end me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center justify-content-end">
-										<a class="d-flex align-items-center" href="#">
-											<p class="mb-0 fs-14 fw-500 text-dark">You</p>
-											<img alt="Profile" src="../../../images/avatar/avatar-2.png" class="bg-light avatar rounded-circle ms-10">
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-primary-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">Wow that's great</p>
-										</div>
-									</div>
-										<p class="pe-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
-
-							  <div class="card no-border d-inline-block my-20 float-start me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center">
-										<a class="d-flex align-items-center" href="#">
-											<img alt="Profile" src="../../../images/avatar/avatar-1.png" class="bg-light avatar rounded-circle me-10">
-											<p class="mb-0 fs-14 fw-500 text-dark">Sarah Kortney</p>
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-info-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">What do you think about our plans for this product launch?</p>
-										</div>
-									</div>
-										<p class="ps-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
-
-							  <div class="card no-border d-inline-block my-20 text-end float-end me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center justify-content-end">
-										<a class="d-flex align-items-center" href="#">
-											<p class="mb-0 fs-14 fw-500 text-dark">You</p>
-											<img alt="Profile" src="../../../images/avatar/avatar-2.png" class="bg-light avatar rounded-circle ms-10">
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-primary-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">I am very busy at the moment and on top of everything, I forgot my umbrella today.</p>
-										</div>
-									</div>
-										<p class="pe-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
-
-							  <div class="card no-border d-inline-block my-20 float-start me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center">
-										<a class="d-flex align-items-center" href="#">
-											<img alt="Profile" src="../../../images/avatar/avatar-1.png" class="bg-light avatar rounded-circle me-10">
-											<p class="mb-0 fs-14 fw-500 text-dark">Sarah Kortney</p>
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-info-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">Yeah everything is fine</p>
-										</div>
-									</div>
-										<p class="ps-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
-
-							  <div class="card no-border d-inline-block my-20 text-end float-end me-2 no-shadow max-w-p80">										  
-									<div class="d-flex flex-row pb-2 align-items-center justify-content-end">
-										<a class="d-flex align-items-center" href="#">
-											<p class="mb-0 fs-14 fw-500 text-dark">You</p>
-											<img alt="Profile" src="../../../images/avatar/avatar-2.png" class="bg-light avatar rounded-circle ms-10">
-										</a>
-									</div>
-									<div class="mt-5 card-body p-15 bg-primary-light rounded10 d-inline-block">
-										<div class="chat-text-start">
-											<p class="mb-0 text-dark">Wow that's great</p>
-										</div>
-									</div>
-										<p class="pe-5 mt-10 mb-0 fs-12 text-mute"><i class="me-5 fa fa-clock-o"></i>09:25</p>
-							  </div>
-							  <div class="clearfix"></div>
+						
 
 
 						  </div>
@@ -342,4 +222,99 @@
   <!-- /.content-wrapper -->
  
 
+<?php $this->endSection(); ?>
+
+<?php $this->section("scripts");?>
+<script>
+$(document).ready(function() {
+    
+    $.ajax({
+        type: "POST",
+        url: "/chat/inbox",
+        data: {
+                'user_id': <?= session()->get('user_id') ?>,
+                
+        },
+        success: function (r) {
+            var info = JSON.parse(r);
+			for(var i = 0; i < info.length; i++){
+				console.log(info[i]);
+                    var user = info[i];
+					let you = '';
+					// check if incoming id of array 1 is equal to another incoming id in array
+					if(user['incoming_msg_id'] == <?= session()->get('user_id') ?>){
+						// if it is equal to the current user id, then we want to display the outgoing id
+						var user_id = user['outgoing_msg_id'];
+					}else if(user['outgoing_msg_id'] == <?= session()->get('user_id') ?>){
+						// if it is equal to the current user id, then we want to display the incoming id
+						var user_id = user['incoming_msg_id'];
+						you = "you: ";
+					}
+					else{
+						// if it is not equal to the current user id, then we want to display the incoming id
+						var user_id =  user['outgoing_msg_id'];
+						you = "";
+					}
+					
+					// get the user info
+					// var user_name = getuser(user_id);
+
+									// end get user info
+								var html = '<a href="javascript:void(0);" class="media p-0 bg-gray-300">'+
+											'<div class="w-p100 d-flex align-items-center m-1 p-2">'+
+												'<img src="../../../images/avatar/avatar-1.png" class="bg-light ms-0 me-2 rounded-circle" height="48" alt="Sarah Kortney" />'+
+												'<div class="w-p100 overflow-hidden">'+
+												'	<h5 class="mt-0 mb-0 fs-14 fw-600 text-primary">'+
+												'		<span id="'+user_id+'"class="float-end text-muted fs-12 fw-400">5:30am</span>'+
+												'		'+user_id+
+												'	</h5>'+
+												'	<p class="mt-1 mb-0 text-muted fs-14">'+
+												'		<span class="w-75">'+you+user['msg']+'</span>'+
+												'	</p>'+
+												'</div>'+
+											'</div>'+
+										'</a>';
+
+										
+										$("#inbox").append(html);
+					
+			}
+            // info[0]['incoming_msg_id'];
+
+
+        },
+        error: function(e){
+            console.log(e)
+        }
+    });
+} );
+
+
+
+function getuser(id)
+{
+	let user_name ="";
+	
+	$.ajax({
+                        type: "POST",
+                        url: "/functions/getUser",
+                        data: {
+                            'user_id': user_id,
+                        },
+                        success: function(r){
+                            var usr = JSON.parse(r);
+                            console.log(r)
+
+                            user_name=usr['user_name'];
+                            
+							
+							},
+							error: function(e){
+								alert("error");
+							}
+						});
+		  return user_name;
+}
+
+</script>
 <?php $this->endSection(); ?>

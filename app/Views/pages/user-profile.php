@@ -29,7 +29,7 @@
 				<div class="col-xl-4 col-lg-5">
 					<div class="card text-center">
 						<div class="card-body">
-							<img src="<?= "/images/avatar/" . $user_image ?>" class="bg-light w-100 h-100 rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+							<img src="<?= "/profile/" . $user_image ?>" class="bg-light w-100 h-100 rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
 
 							<h4 class="mb-0 mt-2"><?= $user_name ?></h4>
@@ -71,15 +71,11 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="#timelinest" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
-										Timeline
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="#settings" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
+									<a href="#settings" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0 active">
 										Settings
 									</a>
 								</li>
+								
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane" id="aboutme">
@@ -191,24 +187,33 @@
 								</div> <!-- end tab-pane -->
 								<!-- end about me section content -->
 
-								<div class="tab-pane show active" id="timelinest">
+								<div class="tab-pane " id="timelinest">
 								</div>
 								<!-- end timeline content-->
 
-								<div class="tab-pane" id="settings">
+								<div class="tab-pane show active" id="settings">
 									<form>
 										<h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i> Personal Info</h5>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="mb-3">
+													<label for="firstname" class="form-label">Profile Picture</label>
+													<input type="file" name="profile" class="form-control" >
+												</div>
+											</div>
+											
+										</div> <!-- end row -->
+										<div class="row">
+											<div class="col-md-6">
+												<div class="mb-3">
 													<label for="firstname" class="form-label">First Name</label>
-													<input type="text" id="fname" class="form-control" id="firstname">
+													<input type="text" id="fname" class="form-control" >
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="mb-3">
 													<label for="lastname" class="form-label">Last Name</label>
-													<input type=" text" id="lname" class="form-control" id="lastname">
+													<input type=" text" id="lname" class="form-control" >
 												</div>
 											</div> <!-- end col -->
 										</div> <!-- end row -->
@@ -258,39 +263,93 @@
 <?php $this->endSection(); ?>
 <?php $this->section('scripts'); ?>
 <script>
-	let text = "<?= $user_name ?>"
+
+let text = "<?= $user_name ?>"
 	const myArray = text.split(" ");
 	const fname = myArray[0],
 		lname = myArray[1];
 	$("#fname").val(fname);
 	$("#lname").val(lname);
-	$("#submit").click(function(e) {
-		formData = {
-			pass: $("#pass").val(),
-			vpass: $("#vpass").val(),
-			fname: $("#fname").val(),
-			lname: $("#lname").val(),
-			bio: $("#bio").val(),
-		}
-		$.ajax({
-			type: "post",
-			url: "/dashboard/profilesave",
-			data: formData,
 
-			success: function(response) {
-				if (response === "saved") {
-					alert("Changes Saved");
-					location.reload();
-				} else {
-					alert(response);
-				}
-			},
-			error: function(response) {
-				alert("An error has occured!");
+$("#submit").click(function (e) { 
+        e.preventDefault();
+        var fname = $("#fname").val();
+	     var lname = $("#lname").val();
+	     var pass = $("#pass").val();
+	     var vpass = $("#vpass").val();
+        var bio = $("#bio").val();
+
+	     var formData = new FormData();
+        formData.append('fname', fname);
+        formData.append('lname', lname);
+        formData.append('bio', bio);
+        formData.append('pass', pass);
+        formData.append('vpass', vpass);
+        formData.append('profile', $("input[name='profile']")[0].files[0]);
+        if(fname!='' && lname !='' && bio !='' && $("input[name='profile']")[0].files[0] !=''){
+        $.ajax({
+            url: '<?=base_url()?>/functions/profilesave',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+				swal("Success", "Post Published Succesfully", "success");
+                // $('#alert').html('<div class="alert text-center alert-success">Post published</div>');
+                
+            },
+			error: function (data) {
+				swal("Error", "Something went wrong", "error");
 			}
-		});
-		e.preventDefault();
-	});
+        });
+    }else{
+        $('#alert').html('<div class="alert text-center alert-danger">Please fill all fields</div>');
+        setTimeout(function() {
+            $('#alert').html('');
+}, 4000);
+        
+    }
+        
+        
+    });
+
+
+
+
+
+
+
+// j mm
+	
+	// $("#submit").click(function(e) {
+	// 	formData = {
+	// 		pass: $("#pass").val(),
+	// 		vpass: $("#vpass").val(),
+	// 		fname: $("#fname").val(),
+	// 		lname: $("#lname").val(),
+	// 		bio: $("#bio").val(),
+	// 		profile:  $("input[name='profile']")[0].files[0],
+	// 	}
+	// 	$.ajax({
+	// 		type: "post",
+	// 		url: "/dashboard/profilesave",
+	// 		data: formData,
+	// 		contentType: false,
+           
+	// 		success: function(response) {
+	// 			if (response === "saved") {
+	// 				alert("Changes Saved");
+	// 				// location.reload();
+	// 			} else {
+	// 				alert(response);
+	// 			}
+	// 		},
+	// 		error: function(response) {
+	// 			alert("An error has occured!");
+	// 		}
+	// 	});
+	// 	e.preventDefault();
+	// });
 </script>
 
 

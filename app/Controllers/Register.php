@@ -35,12 +35,19 @@ class Register extends BaseController
                 'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                 'user_created_at' => date('Y-m-d H:i:s')
             ];
-            $model->save($data);
-            return redirect()->to('/');
+            if($model->save($data))
+            {
+                $response = "success";
+            }else{
+                $response = "failed";
+            }
+
+            // return redirect()->to('/');
         }else{
             $data['validation'] = $this->validator;
-            echo view('/auth/register', $data);
+            // echo view('/auth/register', $data);
+            $response = "failed";
         }
-          
+        echo $response;
     }
 }

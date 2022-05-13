@@ -28,6 +28,7 @@ class Dashboard extends BaseController
         return view('/pages/blog/Blog-dashboard', $data);
 
     }
+   
     public function blogDiscover()
     {
         $model = new BlogModel();
@@ -71,6 +72,14 @@ class Dashboard extends BaseController
         }
 
     }
+    public function BlogView($id)
+        {
+            $model = new BlogModel();
+            $data['blog'] = $model->where("blog_id",$id)->first();
+            $data['title'] = "user Blog";
+            return view('/pages/blog/Blog-single',$data);
+    
+        }
         public function userProfile()
         {
             $session = session();
@@ -136,6 +145,14 @@ class Dashboard extends BaseController
             return view('/pages/events/Events-dashboard', $data);
 
         }
+        public function EventView($id)
+        {
+            $model = new EventModel();
+            $data['event'] = $model->where("event_id",$id)->first();
+            $data['title'] = "user Blog";
+            return view('/pages/events/Events-single', $data);
+    
+        }
         public function Eventsexplore()
         {
             $model = new EventModel();
@@ -157,6 +174,7 @@ class Dashboard extends BaseController
                 "event_venue"=>$venue,
                 "event_date"=>$date,
                 "event_description"=>$description,
+                'event_created_at' => date('Y-m-d H:i:s'),
             ];
             if($model->save($data)){
 
@@ -166,4 +184,16 @@ class Dashboard extends BaseController
             }
 
         }
+        public function docs()
+        {
+            $data['title'] = "user Docs";
+            return view('/pages/docs/docs', $data);
+        }
+        public function team(){
+            $data['title'] = "user Team";
+            return view('/pages/team/team', $data);
+        }
 }
+
+
+

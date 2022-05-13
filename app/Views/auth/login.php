@@ -10,11 +10,11 @@
 						<div class="bg-gray-800 rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<h2 class="text-primary fw-600">Let's Get Started</h2>
-								<?php if(session()->getFlashdata('msg')): ?>
-								<div class="alert alert-danger">
-									<?= session()->getFlashdata('msg'); ?>
+								
+								<div id="alert">
+									
 								</div>
-								<?php endif; ?>
+								
 								<p class="mb-0 text-fade">Sign in to continue to Sl-Mfa.</p>							
 							</div>
 							<div class="p-40">
@@ -41,7 +41,7 @@
 										<!-- /.col -->
 										<div class="col-6">
 										 <div class="fog-pwd text-end">
-											<a href="javascript:void(0)" class="text-primary fw-500 hover-primary"><i class="ion ion-locked"></i> Forgot pwd?</a><br>
+											<a href="/forgot" class="text-primary fw-500 hover-primary"><i class="ion ion-locked"></i> Forgot pwd?</a><br>
 										  </div>
 										</div>
 										<!-- /.col -->
@@ -63,4 +63,51 @@
 			</div>
 		</div>
 	</div>
+<?php $this->endSection(); ?>
+
+<?php $this->section('script'); ?>
+<script>
+	// ajax signin form
+	$(document).ready(function(){
+		$('form').submit(function(e){
+			e.preventDefault();
+// check if email is not empty and password is not empty
+			if($('input[name="email"]').val() != '' && $('input[name="password"]').val() != ''){
+				var form = $(this);
+			var url = form.attr('action');
+			var data = form.serialize();
+			$.ajax({
+				type: 'POST',
+				url: url,
+				data: data,
+				success: function(data){
+					if(data=="success"){
+						$('#alert').html('<div class="alert alert-success">redirecting...</div>');
+						setTimeout(function(){
+							window.location.href = '/dashboard';
+						}, 1000);
+					}else{
+						$("#alert").addClass("alert alert-danger").html("<strong>Error!</strong>Wrong Credentials");
+							setTimeout(function() {
+								$('#alert').html('').removeClass('alert alert-danger');
+						}, 2000);
+					}
+				}
+			});
+				
+				
+			}else{
+				$("#alert").addClass("alert alert-danger").html("<strong>Error!</strong> Please fill all the fields.");
+							setTimeout(function() {
+								$('#alert').html('').removeClass('alert alert-danger');
+						}, 2000);
+			}
+
+
+			
+		});
+	});
+
+</script>
+
 <?php $this->endSection(); ?>
